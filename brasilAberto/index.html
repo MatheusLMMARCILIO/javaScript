@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#formContainer input {
+    display: flex;
+}
+ 
+</style>
+
+<body>
+
+    <pre id="str"></pre>
+
+    <div id="formContainer">
+
+        <h2>Captura de CEP</h2>
+
+        <form id="cepForm">
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="Digite o CEP" required>
+            <button type="button" onclick="buscarCEP()">Buscar CEP</button>
+            <br><br>
+            <label style="display: flex;" for="logradouro">Logradoro:</label>
+            <input type="text" id="logradouro" readonly>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" readonly>
+
+            <label for="localidade">Localidade:</label>
+            <input type="text" id="localidade" readonly>
+
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" readonly>
+
+
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
