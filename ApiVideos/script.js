@@ -1,4 +1,4 @@
-fetch('https://my-json-server.typicode.com/professornelcimariano/lista_js/db')
+fetch('https://my-json-server.typicode.com/professornelcimariano/lista_js/db') //
 .then(response => response.json())
 .then(data => {
     const lista = printVideos(data)
