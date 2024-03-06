@@ -18,7 +18,7 @@ function manipulaHtml() {
         contadorexibe.innerHTML = contador
 
     } else {
-        mudaTexto.innerHTML = 'dados'
+        mudaTexto.inner = 'dados'
         x = 0
         contador = contador - 1
         contadorexibe.innerHTML = contador
